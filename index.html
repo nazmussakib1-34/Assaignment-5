@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONATE BANGLADESH</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <div class="navbar  bg-orange-100">
+            <div class="navbar-start">
+                
+              <a class="btn text-xl bg-lime-600">Blog</a>
+            </div>
+            <div class="navbar-center flex">
+              <ul class="menu menu-horizontal text-xl ">
+               <div class="flex gap-2">
+                 <img src="logo.png" alt="Logo" class="w-8 h-8" >
+                <h2>Donate Bangladesh</h2>
+              </div>
+              </ul>
+            </div>
+            <div class="navbar-end flex gap-2	">
+             <img src="coin.png" alt="Coin" class="w-6 h-6">
+             <h3 id="main-bal">5500</h3>
+             <h3>BDT</h3>
+            </div>
+          </div>
+
+          <!-- Two Main BUTTON Start-->
+
+          <Div class="justify-center flex gap-4 mt-8 mb-8 ">
+            <button id="btn-donation" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Donation</button>
+            <button id="btn-history" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
+          </Div>
+          <!-- Two Main BUTTON  ENd-->
+
+          <div id="donation-page">
+            <!-- Flood At Noakhali Start -->
+
+          <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="noakhali.png"
+                class="max-w-sm rounded-lg shadow-2xl" />
+              <!-- Card-1 Start-->
+
+              <div>
+                <div class="stats shadow">
+                  <div class="stat flex justify-center">
+                    <img src="coin.png" alt="">
+                    <div><span id="dtn-nk-fd">500</span>BDT</div>
+                  </div>
+                </div>
+               <!-- Card-1 end -->
+                <div id="dtn-c1">Donate for Flood at Noakhali, Bangladesh</div>
+                <p>
+                   The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+
+                </p>
+                <input id="inp-dtn-nk-f" type="text" placeholder="Donation Amount" class="input input-bordered w-full max-w-xs" />
+                <button id="btn-clk-n" class="btn btn-primary w-full max-w-xs">Donate Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Flood At Noakhali end -->
+
+          <!-- Relef At feni start -->
+          <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="feni.png"
+                class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+                <div class="stats shadow">
+                  <div class="stat flex justify-center">
+                    <img src="coin.png" alt="">
+                    <div><span id="dtn-nkr-fd">500</span>BDT</div>
+                  </div>
+                </div>
+                <!-- card -->
+
+                <div id="dtn-c2">Donate for Flood Relief in Feni,Bangladesh</div>
+                <p>
+                  The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+                </p>
+
+                <input id="inp-dtn-nkr-f" type="text" placeholder="Donation Amount" class="input input-bordered w-full max-w-xs" />
+                <button id="btn-clk-nr" class="btn btn-primary w-full max-w-xs">Donate Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Relef At feni end-->
+
+          <!-- Injured in Cuata Movement start -->
+
+          <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="quota-protest.png"
+                class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+                <div class="stats shadow">
+                  <div class="stat flex justify-center">
+                    <img src="coin.png" alt="">
+                    <div><span id="dtn-qm">500</span>BDT</div>
+                   
+                  </div>
+                </div>
+                <!-- Card-3 -->
+
+                <div id="dtn-c3">Aid for Injured in the Quota Movement</div>
+                <p>
+                  The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+                </p>
+
+                <input id="inp-dtn-qm" type="text" placeholder="Donation Amount" class="input input-bordered w-full max-w-xs" />
+                <button id="btn-clk-qm" class="btn btn-primary w-full max-w-xs">Donate Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Injured in Cuata Movement end -->
+
+
+          </div>
+
+
+          <!-- History Section -->
+
+          <div id="history-page" class="hidden">
+           <p>Live History page</p>
+        </div>
+        </main>
+    <script>function addInputValues(va1, va2, va3, va4) {
+      
+
+        const textValue = document.getElementById(va1).innerText;
+        const InpValue = document.getElementById(va2).value;
+        const txvalue = document.getElementById(va3).innerText;
+        const value1 = parseFloat(textValue);
+        const value2 = parseFloat(InpValue);
+        const value3 = parseFloat(txvalue);
+    
+        
+        if (isNaN(value2) || value2 < 0 || value3 < 0 || value3 < value2) {
+            alert("Unvalid input / unsufficieant balance.  Give the Valid input/ Sufficieant Balance.")
+            return;
+        }
+        
+    
+        
+        const sum = value1 + value2;
+    
+        const sub = value3 - value2;
+    
+        
+    
+        const timestamplate = new Date().toLocaleString();
+    
+        const dPlace = document.getElementById(va4).innerText;
+    
+        history.push([sum , sub, value2, timestamplate, dPlace]);
+    
+        return[sum , sub];
+    }
+    
+    
+    document.getElementById('btn-donation').addEventListener('click', function(event){
+        event.preventDefault();
+        console.log("button clicked");
+    
+        document.getElementById('donation-page').classList.remove('hidden');
+        document.getElementById('history-page').classList.add('hidden');
+    })
+    
+    function showHistory() {
+        const historyDiv = document.getElementById('history-page');
+        
+    
+        history.forEach(entry => {
+            const historyEntry = document.createElement('div');
+            historyEntry.classList.add('history-entry');
+            historyEntry.innerHTML = ` ${entry[2]} Taka added to ${entry[4]} at ${entry[3]}`;
+            historyDiv.appendChild(historyEntry);
+        });
+    
+    }
+    
+    
+    
+    
+    let history = [];
+    document.getElementById('btn-history').addEventListener('click', function(event){
+        event.preventDefault();
+        console.log("button history clicked");
+        document.getElementById('history-page').classList.remove('hidden');
+        document.getElementById('donation-page').classList.add('hidden');
+        showHistory();
+    })
+        
+    
+    document.getElementById('btn-clk-n').addEventListener('click', function(event){
+        event.preventDefault(event);
+    
+        
+        const result = addInputValues('dtn-nk-fd', 'inp-dtn-nk-f', 'main-bal','dtn-c1');
+        document.getElementById("dtn-nk-fd").innerText = result [0];
+        document.getElementById("main-bal").innerText = result [1];
+    })
+    
+    
+    
+    
+    
+    
+    document.getElementById('btn-clk-nr').addEventListener('click', function(event){
+        event.preventDefault(event);
+        
+        const result = addInputValues('dtn-nkr-fd', 'inp-dtn-nkr-f', 'main-bal','dtn-c2');
+        document.getElementById("dtn-nkr-fd").innerText = result[0];
+        document.getElementById('main-bal').innerText = result[1];
+    })
+    
+    
+    
+    
+    
+    
+    document.getElementById('btn-clk-qm').addEventListener('click', function(event){
+        event.preventDefault(event);
+        
+        const result = addInputValues('dtn-qm', 'inp-dtn-qm', 'main-bal','dtn-c3');
+        document.getElementById("dtn-qm").innerText = result[0];
+        document.getElementById("main-bal").innerText = result[1];
+    })
+    </script>
+    <script src="tailwind.config.js"></script>
+    
+</body>
+</html>
